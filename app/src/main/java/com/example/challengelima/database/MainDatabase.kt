@@ -7,7 +7,7 @@ import androidx.room.RoomDatabase
 import com.example.challengelima.database.user.User
 import com.example.challengelima.database.user.UserDatabaseDao
 
-@Database(entities = [User::class], version = 1, exportSchema = false)
+@Database(entities = [User::class], version = 3, exportSchema = false)
 abstract class MainDatabase : RoomDatabase() {
 
     abstract val userDatabaseDao: UserDatabaseDao

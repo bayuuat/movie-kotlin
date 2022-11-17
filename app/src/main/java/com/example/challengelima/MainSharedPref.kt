@@ -17,11 +17,12 @@ class MainSharedPref(context: Context) {
         }
         get() = preference.getBoolean("IS_LOGIN", false)
 
-    var loggedUser: String?
+    var loggedUser: Long
         set(value) {
             preference.edit{
-                putString("LOGGED_USER", value)
+                putLong("LOGGED_USER", value)
             }
         }
-        get() = preference.getString("LOGGED_USER", "")
+        get() = preference.getLong("LOGGED_USER", 0)
+
 }

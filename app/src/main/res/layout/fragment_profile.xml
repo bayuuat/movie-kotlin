@@ -70,7 +70,8 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etPass"
-        tools:text="Name" />
+        android:hint="Re-Password"
+        android:textColorHint="#7E7E7E"/>
 
     <Button
         android:id="@+id/btnUpdate"

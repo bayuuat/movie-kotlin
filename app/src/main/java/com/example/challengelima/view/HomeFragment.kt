@@ -7,18 +7,20 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.challengelima.MainAdapter
+import com.example.challengelima.MainDatabase
 import com.example.challengelima.MainSharedPref
 import com.example.challengelima.R
 import com.example.challengelima.api.ApiClient
 import com.example.challengelima.api.ApiKey
-import com.example.challengelima.database.user.User
 import com.example.challengelima.databinding.FragmentHomeBinding
 import com.example.challengelima.model.Movie
 import com.example.challengelima.model.Movies
-import com.google.gson.Gson
+import com.example.challengelima.user.UserViewModel
+import com.example.challengelima.user.UserViewModelFactory
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -52,8 +54,15 @@ class HomeFragment : Fragment() {
     fun init(context: Context){
         sharedPref = MainSharedPref(context)
         val user = sharedPref.loggedUser
-        val userJson = Gson().fromJson(user, User::class.java)
-        binding?.tvUsername?.text = userJson.userName
+        val application = requireNotNull(this.activity).application
+        val dataSource = MainDatabase.getInstance(application).userDatabaseDao
+        val viewModelFactory = UserViewModelFactory(dataSource, application)
+        val userViewModel =
+            ViewModelProvider(requireActivity(), viewModelFactory)[UserViewModel::class.java]
+
+        val getUser = userViewModel.getUser(user)
+
+        binding?.tvUsername?.text = getUser?.userName
     }
 
     private fun fetchAllData(){
