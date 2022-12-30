@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1029356558950",
+    "project_id": "movie-analytics-9bee2",
+    "storage_bucket": "movie-analytics-9bee2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1029356558950:android:8346d7872eb6e621ae2ba7",
+        "android_client_info": {
+          "package_name": "com.example.challengelima"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1029356558950-q9a6qp55g3fohefcnvoigdhv7u3se7cf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAewLcY8bVp1lYkjXgYPX5C_RdQZ1vTrJI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1029356558950-q9a6qp55g3fohefcnvoigdhv7u3se7cf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
