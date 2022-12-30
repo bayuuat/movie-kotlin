@@ -7,12 +7,11 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
-import androidx.room.Database
 import com.example.challengelima.MainDatabase
 import com.example.challengelima.R
 import com.example.challengelima.databinding.FragmentRegisterBinding
-import com.example.challengelima.user.UserViewModel
-import com.example.challengelima.user.UserViewModelFactory
+import com.example.data.database.user.UserViewModel
+import com.example.data.database.user.UserViewModelFactory
 
 class RegisterFragment : Fragment() {
 

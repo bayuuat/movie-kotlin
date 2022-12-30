@@ -2,24 +2,25 @@ package com.example.challengelima.view
 
 import android.content.Context
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
+import com.bumptech.glide.Glide
 import com.example.challengelima.MainDatabase
-import com.example.challengelima.MainSharedPref
 import com.example.challengelima.R
-import com.example.challengelima.ViewModel.MainViewModel
 import com.example.challengelima.databinding.FragmentLoginBinding
-import com.example.challengelima.user.UserViewModel
-import com.example.challengelima.user.UserViewModelFactory
-import com.google.gson.Gson
+import com.example.data.MainSharedPref
+import com.example.data.database.user.UserViewModel
+import com.example.data.database.user.UserViewModelFactory
+
 
 class LoginFragment : Fragment() {
-    private var _binding: FragmentLoginBinding? = null
+
+    private var _binding: FragmentLoginBinding?=null
     private val binding get() = _binding
     private lateinit var sharedPref: MainSharedPref
 

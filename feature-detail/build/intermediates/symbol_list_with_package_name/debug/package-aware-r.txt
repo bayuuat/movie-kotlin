@@ -1,0 +1,2 @@
+com.example.feature_detail
+layout activity_detail

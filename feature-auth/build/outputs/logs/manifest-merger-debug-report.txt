@@ -1,0 +1,45 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\4. BELAJAR\KOTLIN\ChallengeLima\feature-auth\src\main\AndroidManifest.xml:2:1-17:12
+INJECTED from D:\4. BELAJAR\KOTLIN\ChallengeLima\feature-auth\src\main\AndroidManifest.xml:2:1-17:12
+INJECTED from D:\4. BELAJAR\KOTLIN\ChallengeLima\feature-auth\src\main\AndroidManifest.xml:2:1-17:12
+	package
+		INJECTED from D:\4. BELAJAR\KOTLIN\ChallengeLima\feature-auth\src\main\AndroidManifest.xml
+		ADDED from D:\4. BELAJAR\KOTLIN\ChallengeLima\feature-auth\src\main\AndroidManifest.xml:2:1-17:12
+		INJECTED from D:\4. BELAJAR\KOTLIN\ChallengeLima\feature-auth\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\4. BELAJAR\KOTLIN\ChallengeLima\feature-auth\src\main\AndroidManifest.xml:2:11-69
+application
+ADDED from D:\4. BELAJAR\KOTLIN\ChallengeLima\feature-auth\src\main\AndroidManifest.xml:4:5-15:19
+activity#com.example.feature_auth.AuthActivity
+ADDED from D:\4. BELAJAR\KOTLIN\ChallengeLima\feature-auth\src\main\AndroidManifest.xml:5:9-11:20
+	android:exported
+		ADDED from D:\4. BELAJAR\KOTLIN\ChallengeLima\feature-auth\src\main\AndroidManifest.xml:7:13-37
+	android:name
+		ADDED from D:\4. BELAJAR\KOTLIN\ChallengeLima\feature-auth\src\main\AndroidManifest.xml:6:13-41
+meta-data#android.app.lib_name
+ADDED from D:\4. BELAJAR\KOTLIN\ChallengeLima\feature-auth\src\main\AndroidManifest.xml:8:13-10:36
+	android:value
+		ADDED from D:\4. BELAJAR\KOTLIN\ChallengeLima\feature-auth\src\main\AndroidManifest.xml:10:17-33
+	android:name
+		ADDED from D:\4. BELAJAR\KOTLIN\ChallengeLima\feature-auth\src\main\AndroidManifest.xml:9:17-52
+meta-data#preloaded_fonts
+ADDED from D:\4. BELAJAR\KOTLIN\ChallengeLima\feature-auth\src\main\AndroidManifest.xml:12:9-14:57
+	android:resource
+		ADDED from D:\4. BELAJAR\KOTLIN\ChallengeLima\feature-auth\src\main\AndroidManifest.xml:14:13-54
+	android:name
+		ADDED from D:\4. BELAJAR\KOTLIN\ChallengeLima\feature-auth\src\main\AndroidManifest.xml:13:13-43
+uses-sdk
+INJECTED from D:\4. BELAJAR\KOTLIN\ChallengeLima\feature-auth\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\4. BELAJAR\KOTLIN\ChallengeLima\feature-auth\src\main\AndroidManifest.xml
+INJECTED from D:\4. BELAJAR\KOTLIN\ChallengeLima\feature-auth\src\main\AndroidManifest.xml
+INJECTED from D:\4. BELAJAR\KOTLIN\ChallengeLima\feature-auth\src\main\AndroidManifest.xml
+INJECTED from D:\4. BELAJAR\KOTLIN\ChallengeLima\feature-auth\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\4. BELAJAR\KOTLIN\ChallengeLima\feature-auth\src\main\AndroidManifest.xml
+		ADDED from D:\4. BELAJAR\KOTLIN\ChallengeLima\feature-auth\src\main\AndroidManifest.xml
+		INJECTED from D:\4. BELAJAR\KOTLIN\ChallengeLima\feature-auth\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\4. BELAJAR\KOTLIN\ChallengeLima\feature-auth\src\main\AndroidManifest.xml
+		ADDED from D:\4. BELAJAR\KOTLIN\ChallengeLima\feature-auth\src\main\AndroidManifest.xml
+		INJECTED from D:\4. BELAJAR\KOTLIN\ChallengeLima\feature-auth\src\main\AndroidManifest.xml
