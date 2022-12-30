@@ -19,11 +19,26 @@ android {
     }
 
     buildTypes {
+        staging{
+            minifyEnabled false
+            debuggable true
+            versionNameSuffix ".staging"
+        }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    productFlavors{
+        free{
+            applicationIdSuffix ".free"
+        }
+        pro{
+            applicationIdSuffix ".pro"
+        }
+    }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
