@@ -26,7 +26,7 @@ class DetailFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        val context = view.getContext();
+        val context = view.context;
         super.onViewCreated(view, savedInstanceState)
 
         binding?.btnBack?.setOnClickListener {
@@ -52,7 +52,6 @@ class DetailFragment : Fragment() {
 
     fun getDetail(): Movie {
         val movie = arguments?.getSerializable("SELECTED_MOVIE") as Movie
-
         return movie;
     }
 

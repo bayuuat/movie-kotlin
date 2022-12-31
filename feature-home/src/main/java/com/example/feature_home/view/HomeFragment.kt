@@ -25,6 +25,7 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
+
 class HomeFragment : Fragment() {
 
     private var _binding: FragmentHomeBinding? = null
@@ -47,6 +48,10 @@ class HomeFragment : Fragment() {
         fetchAllData()
 
         binding?.btnProfile?.setOnClickListener {
+//            parentFragmentManager.beginTransaction()
+//                .replace(com.example.feature_home.R.id.container, ProfileFragment())
+//                .addToBackStack(null)
+//                .commit()
             findNavController().navigate(R.id.action_homeFragment_to_profileFragment)
         }
     }
@@ -122,6 +127,12 @@ class HomeFragment : Fragment() {
         val movie = list?.get(position)
         val bundle = Bundle()
         bundle.putSerializable("SELECTED_MOVIE", movie)
+        val detailFrag = DetailFragment()
+        detailFrag.arguments = bundle
+//        parentFragmentManager.beginTransaction()
+//            .replace(com.example.feature_home.R.id.container, detailFrag)
+//            .addToBackStack(null)
+//            .commit()
         findNavController().navigate(R.id.action_homeFragment_to_detailFragment, bundle)
     }
 }

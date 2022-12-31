@@ -2,7 +2,7 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/nav_graph"
+    android:id="@+id/nav_graph_home"
     app:startDestination="@id/loginFragment">
 
     <fragment
@@ -13,41 +13,10 @@
         <action
             android:id="@+id/action_loginFragment_to_registerFragment"
             app:destination="@id/registerFragment" />
-        <action
-            android:id="@+id/action_loginFragment_to_homeFragment2"
-            app:destination="@id/homeFragment" />
     </fragment>
     <fragment
         android:id="@+id/registerFragment"
         android:name="com.example.challengelima.view.RegisterFragment"
         android:label="fragment_register"
         tools:layout="@layout/fragment_register" />
-    <fragment
-        android:id="@+id/homeFragment"
-        android:name="com.example.feature_home.view.HomeFragment"
-        android:label="fragment_home"
-        tools:layout="@layout/fragment_home" >
-        <action
-            android:id="@+id/action_homeFragment_to_detailFragment"
-            app:destination="@id/detailFragment" />
-        <action
-            android:id="@+id/action_homeFragment_to_profileFragment"
-            app:destination="@id/profileFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/detailFragment"
-        android:name="com.example.challengelima.view.LoginFragment"
-        android:label="fragment_detail"
-        tools:layout="@layout/fragment_detail" />
-    <fragment
-        android:id="@+id/profileFragment"
-        android:name="com.example.feature_home.view.ProfileFragment"
-        android:label="fragment_profile"
-        tools:layout="@layout/fragment_profile" >
-        <action
-            android:id="@+id/action_logout"
-            app:destination="@id/loginFragment"
-            app:popUpTo="@id/loginFragment"
-            app:popUpToInclusive="true" />
-    </fragment>
 </navigation>

@@ -1,6 +1,7 @@
 package com.example.challengelima.view
 
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -16,6 +17,7 @@ import com.example.challengelima.databinding.FragmentLoginBinding
 import com.example.data.MainSharedPref
 import com.example.data.database.user.UserViewModel
 import com.example.data.database.user.UserViewModelFactory
+import com.example.feature_home.HomeActivity
 
 
 class LoginFragment : Fragment() {
@@ -51,14 +53,18 @@ class LoginFragment : Fragment() {
             if (user != null) {
                 sharedPref.isLogin = true
                 sharedPref.loggedUser = user.userId
-                findNavController().navigate(R.id.action_loginFragment_to_homeFragment2)
+                val intent = Intent(activity, HomeActivity::class.java)
+                startActivity(intent)
             } else {
                 Toast.makeText(requireActivity(), "Wrong Credentials", Toast.LENGTH_LONG).show()
             }
         }
 
         if (sharedPref.isLogin){
-            findNavController().navigate(R.id.action_loginFragment_to_homeFragment2)
+            val intent = Intent(activity, HomeActivity::class.java)
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(intent);
+            requireActivity().finish();
         }
 
         binding?.ctaToRegister?.setOnClickListener{

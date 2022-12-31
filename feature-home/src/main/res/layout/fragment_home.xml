@@ -88,13 +88,25 @@
 
         <ImageView
             android:id="@+id/btnProfile"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
             android:layout_marginEnd="20dp"
+            android:tint="#FFFFFF"
             app:layout_constraintBottom_toBottomOf="@+id/tvUsername"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/tvUsername"
-            app:srcCompat="?android:attr/galleryItemBackground" />
+            app:srcCompat="@drawable/ic_svg_profile" />
+
+        <ImageView
+            android:id="@+id/btnFavorite"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="32dp"
+            android:tint="#FFBF00"
+            app:layout_constraintBottom_toBottomOf="@+id/tvUsername"
+            app:layout_constraintEnd_toStartOf="@+id/btnProfile"
+            app:layout_constraintTop_toTopOf="@+id/tvUsername"
+            app:srcCompat="@drawable/ic_svg_favorite" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
